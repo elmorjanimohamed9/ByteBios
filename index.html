@@ -36,9 +36,30 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("dc3gbjZ2VaVo2qUFp"); 
+      })();
+    </script>
   </head>
 
   <body>
+    <!-- #toast -->
+    <div class="notifications">
+    </div>
     <!--
     - #MAIN
   -->
@@ -59,7 +80,16 @@
           </figure>
 
           <div class="info-content">
-            <h1 class="name" title="Richard hanrick">Mohamed El Morjani</h1>
+            <div class="name-badge">
+              <h1 class="name" title="Mohamed El Morjani">
+                Mohamed El Morjani
+              </h1>
+              <img
+                class="badge-check"
+                src="./assets/images/badge-check.png"
+                alt="badge check"
+              />
+            </div>
 
             <p class="title">Full-Stack Developer</p>
           </div>
@@ -77,7 +107,7 @@
           <ul class="contacts-list">
             <li class="contact-item">
               <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
+                <i class="fa-solid fa-envelope" style="color: #2a9af6"></i>
               </div>
 
               <div class="contact-info">
@@ -93,7 +123,7 @@
 
             <li class="contact-item">
               <div class="icon-box">
-                <ion-icon name="phone-portrait-outline"></ion-icon>
+                <i class="fa-solid fa-mobile" style="color: #2a9af6"></i>
               </div>
 
               <div class="contact-info">
@@ -107,7 +137,7 @@
 
             <li class="contact-item">
               <div class="icon-box">
-                <ion-icon name="calendar-outline"></ion-icon>
+                <i class="fa-solid fa-calendar-days" style="color: #2a9af6"></i>
               </div>
 
               <div class="contact-info">
@@ -119,7 +149,7 @@
 
             <li class="contact-item">
               <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
+                <i class="fa-solid fa-location-dot" style="color: #2a9af6"></i>
               </div>
 
               <div class="contact-info">
@@ -204,13 +234,19 @@
 
           <section class="about-text">
             <p>
-              As a first-year student at YouCode, I'm driven by a passion for crafting exceptional digital experiences. With a focus on becoming a skilled Full-Stack Developer, my expertise lies in front-end development, where I excel in VueJs, Tailwind CSS, and Laravel. I am dedicated to mastering the latest front-end technologies to create visually stunning and intuitive user interfaces.
+              As a first-year student at YouCode, I'm driven by a passion for
+              crafting exceptional digital experiences. With a focus on becoming
+              a skilled Full-Stack Developer, my expertise lies in front-end
+              development, where I excel in VueJs, Tailwind CSS, and Laravel. I
+              am dedicated to mastering the latest front-end technologies to
+              create visually stunning and intuitive user interfaces.
             </p>
 
             <p>
-              My goal is to leverage my skills to build websites that are not only functional but also elevate the user experience, leaving a lasting impression on visitors.
+              My goal is to leverage my skills to build websites that are not
+              only functional but also elevate the user experience, leaving a
+              lasting impression on visitors.
             </p>
-
           </section>
 
           <!--
@@ -223,12 +259,7 @@
             <ul class="service-list">
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-design.svg
-                "
-                    alt="design icon"
-                    width="40"
-                  />
+                  <i class="fa-solid fa-pen-ruler" style="color: #2a9af6"></i>
                 </div>
 
                 <div class="service-content-box">
@@ -243,11 +274,7 @@
 
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-dev.svg"
-                    alt="Web development icon"
-                    width="40"
-                  />
+                  <i class="fa-solid fa-file-code" style="color: #2a9af6"></i>
                 </div>
 
                 <div class="service-content-box">
@@ -261,30 +288,21 @@
 
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-app.svg"
-                    alt="mobile app icon"
-                    width="40"
-                  />
+                  <i class="fa-solid fa-palette" style="color: #2a9af6"></i>
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Mobile apps</h4>
+                  <h4 class="h4 service-item-title">Graphic Design</h4>
 
                   <p class="service-item-text">
-                    Professional development of applications for iOS and
-                    Android.
+                    Creative and professional design solutions.
                   </p>
                 </div>
               </li>
 
               <li class="service-item">
                 <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-photo.svg"
-                    alt="camera icon"
-                    width="40"
-                  />
+                  <i class="fa-solid fa-photo-film" style="color: #2a9af6"></i>
                 </div>
 
                 <div class="service-content-box">
@@ -311,28 +329,42 @@
                 <div class="content-card" data-testimonials-item>
                   <figure class="testimonials-avatar-box">
                     <img
-                      src="./assets/images/avatar-1.png"
+                      src="./assets/images/Testimonials/Aymane.png"
                       alt="Daniel lewis"
                       width="60"
                       data-testimonials-avatar
                     />
                   </figure>
 
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Daniel lewis
-                  </h4>
+                  <div class="testimonials-title-profile">
+                    <h4
+                      class="h4 testimonials-item-title"
+                      data-testimonials-title
+                    >
+                      Aymane Benhima
+                    </h4>
+                    <!-- Lien LinkedIn -->
+                    <a
+                      href="https://www.linkedin.com/in/aymanebenhima/"
+                      class="testimonials-linkedin"
+                      data-modal-linkedin
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                  </div>
 
                   <div class="testimonials-text" data-testimonials-text>
                     <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
+                      As a mentor in web development, I have had the pleasure of
+                      working closely with Mohamed, and I am consistently
+                      impressed by his enthusiasm, dedication, and remarkable
+                      talent in web design. Mohamed's passion for web
+                      development shines through in every brief project he
+                      undertakes. His dedication to mastering the craft is
+                      evident in his approach, especially when building web apps
+                      from scratch. This not only showcases his technical skills
+                      but also highlights his creative mindset.
                     </p>
                   </div>
                 </div>
@@ -342,90 +374,43 @@
                 <div class="content-card" data-testimonials-item>
                   <figure class="testimonials-avatar-box">
                     <img
-                      src="./assets/images/avatar-2.png"
+                      src="./assets/images/Testimonials/Yassir.png"
                       alt="Jessica miller"
                       width="60"
                       data-testimonials-avatar
                     />
                   </figure>
 
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Jessica miller
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
+                  <div class="testimonials-title-profile">
+                    <h4
+                      class="h4 testimonials-item-title"
+                      data-testimonials-title
+                    >
+                      Yassir Elkhaili
+                    </h4>
+                    <!-- Lien LinkedIn -->
+                    <a
+                      href="https://www.linkedin.com/in/yassirelkhaili/"
+                      class="testimonials-linkedin"
+                      data-modal-linkedin
+                      target="_blank"
+                    >
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
                   </div>
-                </div>
-              </li>
-
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-3.png"
-                      alt="Emily evans"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Emily evans
-                  </h4>
 
                   <div class="testimonials-text" data-testimonials-text>
                     <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-4.png"
-                      alt="Henry william"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Henry william
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
+                      Having worked closely with Mohammed at YouCode, I've been
+                      consistently impressed by his expertise in UI/UX
+                      development. His proficiency with tools like TailwindCSS
+                      and design platforms such as Illustrator and Figma is
+                      evident. Mohammed's impactful contributions to projects
+                      like PeoplePerTask highlight his ability to craft
+                      user-centric digital experiences with finesse. His blend
+                      of technical skill and creative vision makes him a
+                      standout talent in the field. I wholeheartedly endorse
+                      Mohammed for any UI/UX development endeavors.
                     </p>
                   </div>
                 </div>
@@ -448,8 +433,8 @@
               <div class="modal-img-wrapper">
                 <figure class="modal-avatar-box">
                   <img
-                    src="./assets/images/avatar-1.png"
-                    alt="Daniel lewis"
+                    src="./assets/images/Testimonials/Aymane.png"
+                    alt="Aymane Benhima"
                     width="80"
                     data-modal-img
                   />
@@ -459,9 +444,7 @@
               </div>
 
               <div class="modal-content">
-                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-                <time datetime="2021-06-14">14 June, 2021</time>
+                <h4 class="h3 modal-title" data-modal-title>Aymane Benhima</h4>
 
                 <div data-modal-text>
                   <p>
@@ -476,70 +459,6 @@
               </div>
             </section>
           </div>
-
-          <!--
-          - clients
-        -->
-
-          <section class="clients">
-            <h3 class="h3 clients-title">Clients</h3>
-
-            <ul class="clients-list has-scrollbar">
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-1-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-2-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-3-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-4-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-5-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-6-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-            </ul>
-          </section>
         </article>
 
         <!--
@@ -554,7 +473,10 @@
           <section class="timeline">
             <div class="title-wrapper">
               <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
+                <i
+                  class="fa-solid fa-graduation-cap"
+                  style="color: #2a9af6"
+                ></i>
               </div>
 
               <h3 class="h3">Education</h3>
@@ -601,7 +523,7 @@
           <section class="timeline">
             <div class="title-wrapper">
               <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
+                <i class="fa-solid fa-briefcase" style="color: #2a9af6"></i>
               </div>
 
               <h3 class="h3">Experience</h3>
@@ -714,13 +636,11 @@
                     Frontend Development
                   </h4>
                   <ul class="skills-list">
-
                     <li class="skills-item">
                       <div class="icon-box icon-box-skills">
                         <i class="devicon-c-plain colored icon-skills"></i>
                       </div>
                     </li>
-
                   </ul>
                 </li>
               </ol>
@@ -839,20 +759,20 @@
                 data-filter-item
                 data-category="web development"
               >
-                <a href="#">
+                <a href="https://bilalchbanat.github.io/PeoplePerTask/">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
 
                     <img
-                      src="./assets/images/project-1.jpg"
+                      src="./assets/images/projects/peoplePerTask.jpeg"
                       alt="finance"
                       loading="lazy"
                     />
                   </figure>
 
-                  <h3 class="project-title">Finance</h3>
+                  <h3 class="project-title">PeoplePerTask</h3>
 
                   <p class="project-category">Web development</p>
                 </a>
@@ -1272,7 +1192,7 @@
           <section class="contact-form">
             <h3 class="h3 form-title">Contact Form</h3>
 
-            <form action="#" class="form" data-form>
+            <form id="contact-form" class="form">
               <div class="input-wrapper">
                 <input
                   type="text"
@@ -1282,7 +1202,6 @@
                   required
                   data-form-input
                 />
-
                 <input
                   type="email"
                   name="email"
@@ -1292,7 +1211,6 @@
                   data-form-input
                 />
               </div>
-
               <textarea
                 name="message"
                 class="form-input"
@@ -1300,14 +1218,14 @@
                 required
                 data-form-input
               ></textarea>
-
-              <button class="form-btn" type="submit" disabled data-form-btn>
+              <button class="form-btn" type="submit" id="send-button">
                 <ion-icon name="paper-plane"></ion-icon>
                 <span>Send Message</span>
               </button>
             </form>
           </section>
         </article>
+
       </div>
     </main>
 
@@ -1327,5 +1245,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
   </body>
 </html>
