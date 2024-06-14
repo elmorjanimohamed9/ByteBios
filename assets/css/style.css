@@ -260,9 +260,9 @@ body {
   }
 }
 
-.toast.error{
+.toast.error {
   --color: #f24d4c;
-  background-image: linear-gradient(to right, #f24d4c55, var(--eerie-black-1) 30% );
+  background-image: linear-gradient(to right, #f24d4c55, var(--eerie-black-1) 30%);
 }
 
 .sidebar,
@@ -1517,35 +1517,34 @@ textarea.form-input::-webkit-resizer {
 \*-----------------------------------*/
 
 /**
- * responsive larger than 450px screen
+ * Responsive for screens up to 450px
  */
+@media (max-width: 450px) {
 
-@media (min-width: 450px) {
+  /* About */
+  .testimonials-linkedin {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    color: #2a9af6;
+  }
+}
 
-  /**
-   * client
-   */
+/**
+ * Responsive for screens 450px and larger
+ */
+@media (min-width: 451px) {
 
+  /* Clients */
   .clients-item {
     min-width: calc(33.33% - 10px);
   }
 
-
-
-  /**
-   * #PORTFOLIO, BLOG 
-   */
-
+  /* Portfolio and Blog */
   .project-img,
   .blog-banner-box {
     height: auto;
   }
-
 }
-
-
-
-
 
 /**
  * responsive larger than 580px screen
@@ -1708,6 +1707,7 @@ textarea.form-input::-webkit-resizer {
   .about-text {
     margin-bottom: 40px;
   }
+
 
   /* service */
 
