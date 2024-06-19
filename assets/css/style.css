@@ -102,8 +102,6 @@
 
 
 
-
-
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -1526,6 +1524,24 @@ textarea.form-input::-webkit-resizer {
     margin-bottom: 10px;
     margin-left: 5px;
     color: #2a9af6;
+  }
+
+  .toast {
+    width: 300px;
+  }
+
+  .content span {
+    font-size: 11px;
+    font-weight: normal;
+  }
+
+  .toast .title {
+    font-size: small;
+    font-weight: bold;
+  }
+
+  .toast i {
+    font-size: large;
   }
 }
 
