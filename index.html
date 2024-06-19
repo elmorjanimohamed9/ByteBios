@@ -51,15 +51,16 @@
     ></script>
     <script type="text/javascript">
       (function () {
-        emailjs.init("dc3gbjZ2VaVo2qUFp"); 
+        emailjs.init("dc3gbjZ2VaVo2qUFp");
       })();
     </script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
 
   <body>
     <!-- #toast -->
-    <div class="notifications">
-    </div>
+    <div class="notifications"></div>
     <!--
     - #MAIN
   -->
@@ -985,7 +986,9 @@
           <section class="blog-posts">
             <ul class="blog-posts-list">
               <li class="blog-post-item">
-                <a href="https://www.linkedin.com/posts/mohamed-elmorjani_tailwindcss-devweb-frontend-activity-7203695547558281216-xoN_?utm_source=share&utm_medium=member_desktop">
+                <a
+                  href="https://www.linkedin.com/posts/mohamed-elmorjani_tailwindcss-devweb-frontend-activity-7203695547558281216-xoN_?utm_source=share&utm_medium=member_desktop"
+                >
                   <figure class="blog-banner-box">
                     <img
                       src="./assets/images/blog-1.jpg"
@@ -1008,7 +1011,8 @@
                     </h3>
 
                     <p class="blog-text">
-                      Want to add subtle animations to your Tailwind projects? Tailwind Animated makes it a breeze!
+                      Want to add subtle animations to your Tailwind projects?
+                      Tailwind Animated makes it a breeze!
                     </p>
                   </div>
                 </a>
@@ -1217,6 +1221,8 @@
                 required
                 data-form-input
               ></textarea>
+              <input type="text" name="website" style="display: none" />
+              <div class="g-recaptcha" data-sitekey="6Lc1ifwpAAAAAPzHtePAbXjQ_S0djvxP4oB8_WKP"></div>
               <button class="form-btn" type="submit" id="send-button">
                 <ion-icon name="paper-plane"></ion-icon>
                 <span>Send Message</span>
@@ -1224,7 +1230,6 @@
             </form>
           </section>
         </article>
-
       </div>
     </main>
 
@@ -1244,6 +1249,5 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-
   </body>
 </html>

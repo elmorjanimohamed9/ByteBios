@@ -164,6 +164,31 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
+    // Check the honeypot field
+    if (document.querySelector('input[name="website"]').value !== "") {
+      // If the honeypot field is filled out, treat as spam
+      createToast(
+        "error",
+        "fa-solid fa-circle-exclamation",
+        "Error",
+        "Failed to send message."
+      );
+      return;
+    }
+
+    // Check reCAPTCHA
+    let recaptchaResponse = grecaptcha.getResponse();
+    if (recaptchaResponse.length === 0) {
+      // reCAPTCHA not verified
+      createToast(
+        "error",
+        "fa-solid fa-circle-exclamation",
+        "Error",
+        "Please complete the CAPTCHA."
+      );
+      return;
+    }
+
     emailjs.sendForm("service_xykr7zs", "template_r0wg1rx", this).then(
       function () {
         // Show success toast
