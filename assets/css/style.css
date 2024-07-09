@@ -1780,7 +1780,7 @@ textarea.form-input::-webkit-resizer {
     white-space: nowrap; 
     overflow: hidden; 
     text-overflow: ellipsis; 
-    width: 150px;
+    width: 120px;
   }
 
   .testimonials-linkedin {
