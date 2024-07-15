@@ -138,6 +138,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
+
 // Notifications container for toast messages
 
 let notifications = document.querySelector(".notifications");
@@ -166,7 +167,6 @@ document
 
     // Check the honeypot field
     if (document.querySelector('input[name="website"]').value !== "") {
-      // If the honeypot field is filled out, treat as spam
       createToast(
         "error",
         "fa-solid fa-circle-exclamation",
