@@ -138,7 +138,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-
 // Notifications container for toast messages
 
 let notifications = document.querySelector(".notifications");
