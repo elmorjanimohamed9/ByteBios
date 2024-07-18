@@ -197,6 +197,9 @@ document
           "Success",
           "Message sent successfully!"
         );
+
+        // Reset the form
+        this.reset();
       },
       function () {
         // Show error toast
