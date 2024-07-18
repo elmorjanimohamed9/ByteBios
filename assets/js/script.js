@@ -199,7 +199,7 @@ document
         );
 
         // Reset the form
-        this.reset();
+        document.getElementById("contact-form").reset();
       },
       function () {
         // Show error toast
